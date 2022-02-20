@@ -1,0 +1,20 @@
+[package]
+name = "miller-bot"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rusqlite = "0.25.3"
+dirs = "3.0.2"
+serde = {version = "1.0.130", features = ["derive"]}
+serde_json = "1.0.68"
+quick-xml = "0.22.0"
+curl = "0.4.38"
+regex = "1.5.4"
+serenity = { version = "0.10.9", default-features = false, features = ["client", "gateway", "rustls_backend", "model"]}
+tokio = { version = "1.11.0", features = ["full"] }
+# songbird = { version = "0.2.0", features = ["builtin-queue"] }
+chrono = "0.4.19"
+clap = { version = "3.1.0", features = ["derive"] }
